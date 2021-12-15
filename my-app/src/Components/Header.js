@@ -23,18 +23,18 @@ const Header = () => {
                         </button>
                         <div class="collapse navbar-collapse" id="navbarResponsive">
                             <ul class="navbar-nav ml-auto">
+                            {/* <li className="nav-item">
+                                <Link className="nav-link" to="/hello" >Hello</Link>
+                            </li> */}
                                 <li className="nav-item">
-                                    <Link className="nav-link" to="/hello" >Hello</Link>
+                                    <Link className="nav-link" to="/company" >Company</Link>
                                 </li>
-                                <li className="nav-item">
-                                    <Link className="nav-link" to="/emp" >Emp</Link>
-                                </li>
-                                <li className="nav-item">
+                                {/* <li className="nav-item">
                                     <Link className="nav-link" to="/spring" >Spring</Link>
-                                </li>
-                                <li className="nav-item">
+                                 </li> */}
+                                {/* <li className="nav-item">
                                     <Link className="nav-link" to="/logout" >Logout</Link>
-                                </li>
+                                </li>  */}
                             </ul>
                         </div>
                     </div>
@@ -48,8 +48,8 @@ const Header = () => {
                 <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-dark bg-dark">
                     <div class="container">
                         <Link className="navbar-brand" to="/">
-                            <img src="https://www.capgemini.com/wp-content/themes/capgemini-komposite/assets/images/logo.svg"
-                                height="24px" alt="Capgemini" />
+                            {/* <img src="https://www.capgemini.com/wp-content/themes/capgemini-komposite/assets/images/logo.svg"
+                                height="24px" alt="Capgemini" /> */}
                         </Link>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
                             <span class="navbar-toggler-icon"></span>
@@ -57,12 +57,12 @@ const Header = () => {
                         <div class="collapse navbar-collapse" id="navbarResponsive">
                             <ul class="navbar-nav ml-auto">
 
-                                <li className="nav-item">
+                                {/* <li className="nav-item">
                                     <Link className="nav-link" to="/register" >Register</Link>
-                                </li>
+                                </li> */}
                                 <li className="nav-item">
                                     <Link className="nav-link" to="/login" >Login</Link>
-                                </li>
+                                </li> 
                             </ul>
                         </div>
                     </div>
@@ -74,6 +74,3 @@ const Header = () => {
 }
 
 export default Header;
-
-
-

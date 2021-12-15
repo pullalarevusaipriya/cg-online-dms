@@ -21,7 +21,7 @@ const Login = () => {
     };
 
     const submitAppUser = (event) => {
-        axios.post(`http://localhost:8082/login`, appUser)
+        axios.post(`// http://localhost:8082/login`, appUser)
             .then((response) => {
                 console.log(response.data);
                 sessionStorage.setItem('isUserLoggedIn', true);
@@ -68,9 +68,10 @@ const Login = () => {
                         <div class="form-group">
                             <select class="form-control mb-3" name="role" id="role" onChange={handleAppUser}>
                                 <option value="Role">Select a role</option>
-                                <option value="ADMIN">ADMIN</option>
-                                <option value="EMPLOYEE">EMPLOYEE</option>
-                                <option value="MANAGER">MANAGER</option>
+                                <option value="FARMER">FARMER</option>
+                                <option value="COMPANY">COMPANY</option>
+                                <option value="CUSTOMER">CUSTOMER</option>
+                                <option value="DEALER">DEALER</option>
                             </select>
                         </div>
                         <input
