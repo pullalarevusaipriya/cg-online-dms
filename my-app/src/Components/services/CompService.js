@@ -11,7 +11,7 @@ const getAllCompanyService = () => {
     return axios.get(`/company/all`);
 }
 
-const addCompanyService = (company) => {
+const insertCompanyService = (company) => {
     console.log(`addcompany`);
     return axios.post(`/company/add`, company);
 }
@@ -21,15 +21,15 @@ const updateCompanyService = (company) => {
     return axios.put(`/company/update`, company);
 }
 
-const deleteCompanyService = (companyid) => {
+const deleteCompanyService = (companyId) => {
     console.log(`deleteCompany`);
-    return axios.post(`/company/delete/${companyid}`);
+    return axios.post(`/company/delete/${companyId}`);
 }
 
 
 
 
-export { getCompanyByIdService, getAllCompanyService, addCompanyService, updateCompanyService, deleteCompanyService };
+export { getCompanyByIdService, getAllCompanyService, insertCompanyService, updateCompanyService, deleteCompanyService };
 //  import axios from 'axios';
 
 //  // Create services for other components in this way. 

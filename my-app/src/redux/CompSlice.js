@@ -27,15 +27,15 @@ const CompSlice = createSlice({
             state.companyList = action.payload;
         },
         deletecompanyById: (state, action) => {
-            console.log('Complice reducers deleteCompanyById');
+            console.log('CompSlice reducers deleteCompanyById');
             state.companyList = action.payload;
         },
         updatecompany: (state, action) => {
-            console.log('Complice reducers update CompanyById');
+            console.log('CompSlice reducers update CompanyById');
             state.companyList = action.payload;
         },
-        addcompany: (state, action) => {
-            console.log('Complice reducers addCompanyById');
+        insertcompany: (state, action) => {
+            console.log('CompSlice reducers addCompanyById');
             state.companyList = action.payload;
         },
 
@@ -43,6 +43,6 @@ const CompSlice = createSlice({
     }
 });
 
-export const { getcompanyById, getAllCompany , deletecompanyById, addcompany, updatecompany} = CompSlice.actions;
+export const { getcompanyById, getAllCompany , deletecompanyById,updatecompany, insertcompany } = CompSlice.actions;
 
 export default CompSlice.reducer;

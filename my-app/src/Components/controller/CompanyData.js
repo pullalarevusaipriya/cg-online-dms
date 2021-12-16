@@ -1,7 +1,7 @@
 //import { getCompayByIdService } from "../services/CompService";
 import { useDispatch, useSelector  } from "react-redux";
 import { useState } from "react";
-import { getAllCompanyService,getCompanyByIdService, addCompanyService, updateCompanyService, deleteCompanyService } from "../services/CompService";
+import { getAllCompanyService,getCompanyByIdService,insertCompanyService} from "../services/CompService";
 import axios from "axios";
 import Company from "../models/Company";
 
@@ -100,7 +100,7 @@ const CompanyData = () => {
     const submitUpdateCompany = (evt) => {
         evt.preventDefault();
         console.log('addCompany');
-        axios.put(`http://localhost:8082/company/update`, updtCompanyObj)
+        axios.put(`http://localhost:8082//company/update`, updtCompanyObj)
             .then((response) => {
                 setUpdateCompanyObj(response.data);
                 alert('company details updated successfully.');
@@ -118,13 +118,13 @@ const CompanyData = () => {
 
         console.log('deleteCompanyDetails');
 
-        axios.delete(`http://localhost:8082/company/delete/${companyId}`) //delete/{companyid}
+        axios.delete(`http://localhost:8082//company/delete/${deleteCompany}`) //delete/${companyid}
 
             .then((response) => {
 
-                alert(`Company details deleted successfully.`)
+                alert(`Company details deleted successfully.`);
 
-                dispatch(deletecompanyById(response.data));     
+                //  dispatch(deletecompanyById(response.data));     
             })
 
             .catch(() => {
