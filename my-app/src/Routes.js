@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 //import SpringBootData from "./Components/SpringBootData.js";
 import React, { useEffect, useState } from 'react';
-import CompanyData from "./Components/CompanyData";
+import CompanyData from "./Components/controller/CompanyData";
 import Header from "./Components/Header";
 //import Hello from './components/Hello';
 import Home from './Components/Home';

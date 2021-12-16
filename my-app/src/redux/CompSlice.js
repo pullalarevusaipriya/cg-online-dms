@@ -7,11 +7,7 @@ const CompSlice = createSlice({
     name: 'company',
 
     initialState: {
-        // empState: {
-        //     eid: 101,
-        //     firstName: 'Sonu',
-        //     salary: 10.5
-        // }
+         
 
         companyState: new Company(),
         companyList: []
@@ -22,33 +18,31 @@ const CompSlice = createSlice({
     reducers: {
 
         getcompanyById: (state, action) => {
-            console.log('CompSlice reducers getCompanyById');
+            console.log('company slice reducer');
             state.companyState = action.payload;
         },
 
         getAllCompany: (state, action) => {
-            console.log('CompSlice reducers getAllCompany');
+            console.log('CompSlice reducers getAllcompany');
             state.companyList = action.payload;
         },
-
-        deletecompanybyid: (state, action) => {
-            console.log('CompSlice reducers deletecompanyById');
+        deletecompanyById: (state, action) => {
+            console.log('Complice reducers deleteCompanyById');
             state.companyList = action.payload;
         },
         updatecompany: (state, action) => {
-            console.log('CompSlice reducers updatecompany');
+            console.log('Complice reducers update CompanyById');
+            state.companyList = action.payload;
+        },
+        addcompany: (state, action) => {
+            console.log('Complice reducers addCompanyById');
             state.companyList = action.payload;
         },
 
-        addcompany: (state, action) => {
-            console.log('CompSlice reducers addcompany');
-            state.companyList = action.payload;
-        }
+        // more methods will be added 
     }
-       
-    
 });
 
-export const { getcompanyById, getAllCompany, deletecompanybyid, updatecompany, addcompany} = CompSlice.actions;
+export const { getcompanyById, getAllCompany , deletecompanyById, addcompany, updatecompany} = CompSlice.actions;
 
 export default CompSlice.reducer;

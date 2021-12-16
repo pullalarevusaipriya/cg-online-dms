@@ -1,14 +1,15 @@
 
-//import CompanyData from "./Components/CompanyData";
+import CompanyData from "./Components/controller/CompanyData";
+
 //import Routes from "./Routes";
-import SpringCompanyData from "./Components/SpringCompanyData";
+//import SpringCompanyData from "./Components/SpringCompanyData";
 
 const App = () => {
   return (
     <div className="bg-light">
       {/* <Routes />   */}
-        {/* <CompanyData/>  */}
-        <SpringCompanyData/>
+         <CompanyData/>  
+        {/* <SpringCompanyData/> */}
     </ div>
   );
 }

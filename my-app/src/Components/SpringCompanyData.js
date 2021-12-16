@@ -64,22 +64,20 @@ const SpringCompanyData = () => {
                 alert("Company could not be added.");
             });
     }
-
-    const submitDeleteCompany= () => {
-        axios.get(`http://localhost:8082/company/delete/{companyid}`)
-         
-         
+    const DeleteCompanyById= (evt) => {
+        evt.preventDefault();
+        axios.post(`http://localhost:8082/company/delete/{companyid}`, newCompanyObj)
             .then((response) => {
-                setCompanyList(response.data);
-                console.log(response.data);
-                console.log(companyList);
+                setDisplayCompanyObj(response.data);
+                alert('Company deleted successfully.');
+                setNewCompanyObj({ companyName: '', companyId: '', email: '' , mobileNumber: '',address: '' , password: ''})
             })
             .catch(() => {
-                alert('Something is wrong!');
+                alert("Company could not be deleted.");
             });
-
-    
     }
+     
+     
 
 
     return (
@@ -166,6 +164,18 @@ const SpringCompanyData = () => {
                 <p>New Company Data: {displayCompanyObj.companyId} {displayCompanyObj.companyName} {displayCompanyObj.address} {displayCompanyObj.email} {displayCompanyObj.mobileNumber} {displayCompanyObj.password}</p>
             </div>
             <p>----------------</p>
+
+            <p>Delete Company By Id</p>
+            <input type="number" id="companyId" name="companyId" value={company.companyId} onChange={handleCompany} placeholder="Enter companyId to delete" />
+            <input type="submit" name="Find Company" onClick={DeleteCompanyById} />
+            <p className="text-primary">{company.companyId} {company.companyName} {company.address} {company.mobileNumber} {company.email}</p>
+            <p>----------------</p>
+
+            
+             
+                    
+                      
+
             <div>
                 <div>
                     <p>Get All Company</p>

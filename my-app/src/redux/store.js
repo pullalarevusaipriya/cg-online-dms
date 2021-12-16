@@ -1,6 +1,6 @@
+ // import empReducer from './EmpSlice';
+// import depReducer from './DepSlice';
 import companyReducer from './CompSlice';
-//import depReducer from './DepSlice';
-
 // steps - 
 // 1. create store - only one 
 // 2. provide the store to index.js 
@@ -17,8 +17,11 @@ console.log('store');
 const store = configureStore(
     {
         reducer: {
-            company: companyReducer,
-             
+            // emp: empReducer,
+            // dep: depReducer
+               company: companyReducer
+            // ,
+            // anotherComponent: anotherComponentReducer
         }
     }
 );
