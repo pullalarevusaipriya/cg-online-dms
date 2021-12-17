@@ -40,7 +40,7 @@ const GetCompanyById = () => {
     }
     return (
         <div>
-            <h1 className="display-4 text-primary mt-3 mb-3" >Company Component</h1>
+            <h1 className="display-4 text-primary mt-3 mb-3" >Get Company By Id</h1>
             <div className="col-4 border border-light shadow p-3 mb-5 bg-white">
                 <p>Find Company by id</p>
                 <form className="form form-group form-primary" onSubmit={submitGetCompanyById}>

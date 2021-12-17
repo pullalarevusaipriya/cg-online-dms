@@ -46,7 +46,7 @@ const AddCompany = () => {
 
     return (
         <div>
-            <h1 className="display-4 text-primary mt-3 mb-3" >Company Component</h1>
+            <h1 className="display-4 text-primary mt-3 mb-3" >Add Company</h1>
             <div className="col-6 border border-light shadow p-3 mb-5 bg-white">
             
                 <p>Add New Company</p>
@@ -101,14 +101,23 @@ const AddCompany = () => {
                         onChange={handleAddCompany}
                         placeholder="Enter address" /> 
                         <br/><br/> 
-                    <input
-                        type="submit"
-                        // type="button"
-                        value="Add Company"
-                        onClick={submitAddCompany}
-                    />
+                     {/* <input
+                        // type="submit"
+                        // // type="button"
+                        // value="Add Company"
+                        // onClick={submitAddCompany} 
+                        
+                    /> */}
+                    <form className="form form-group form-primary">
+                            <input className="mt-3 btn btn-primary btn-block" type="button" onClick={submitAddCompany} value="Add Company" />
+                        </form>
                 </div>
-                <p>New Company Data:{displayCompanyObj.companyName} {displayCompanyObj.email}{displayCompanyObj.mobileNumber}{displayCompanyObj.password} {displayCompanyObj.address}</p>
+
+                <p>Company Name: {displayCompanyObj.companyName}<br/></p>
+                <p>email: {displayCompanyObj.email}<br/></p>
+                <p>mobileNumber: {displayCompanyObj.mobileNumber}<br/></p>
+                {/* <p>password: {displayCompanyObj.password} <br/></p> */}
+                <p>address: {displayCompanyObj.address}</p>
             </div>
             </div>
     );

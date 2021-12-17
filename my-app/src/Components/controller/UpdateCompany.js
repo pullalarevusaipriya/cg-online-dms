@@ -16,7 +16,7 @@ const UpdateCompany = () => {
 
      const [newCompanyObj, setNewCompanyObj] = useState(new Company());
     const [updtCompanyObj, setUpdtCompanyObj] = useState(new Company());
-    // const [displayCompanyObj, setDisplayCompanyObj] = useState(new Company());
+     const [displayCompanyObj, setDisplayCompanyObj] = useState(new Company());
     const [updateCompanyObj, setUpdateCompanyObj] = useState('');
     // const [deleteCompany, setDeleteCompany] = useState('');
     // const companyDelete = useSelector((state) => state.company.companyDelete);
@@ -46,8 +46,8 @@ const UpdateCompany = () => {
 
     return (
         <div>
-            <h1 className="display-4 text-primary mt-3 mb-3" >Company Component</h1>
-            <div className="col-6 border border-light shadow p-3 mb-5 bg-white">
+            <h1 className="display-4 text-primary mt-3 mb-3" >Update Company</h1>
+            <div className="col-4 border border-light shadow p-3 mb-5 bg-white">
             
             <p>Update New Company</p>
             {/* <form onSubmit={submitAddEmp}> */}
@@ -100,14 +100,23 @@ const UpdateCompany = () => {
                     onChange={handleUpdateCompany}
                     placeholder="Enter password" /> 
                     <br/><br/>  
-                <input
+                {/* <input
                     type="submit"
                     // type="button"
                     value="update Company"
                     onClick={submitUpdateCompany}
-                />
+                /> */}
+                <form className="form form-group form-primary">
+                            <input className="mt-3 btn btn-primary btn-block" type="button" onClick={submitUpdateCompany} value="Update Company" />
+                        </form>
             </div>
-        <p>Updated Company Data: {updateCompanyObj.CompanyId} {updateCompanyObj.companyName} {updateCompanyObj.address} {updateCompanyObj.mobileNumber} {updateCompanyObj.email}  {updateCompanyObj.password}</p>
+        <p>Update Company: <br/></p>
+                <p>CompanyId: {updateCompanyObj.CompanyId} </p> 
+                <p>Company Name: {displayCompanyObj.companyName}<br/></p>
+                <p>email: {displayCompanyObj.email}<br/></p>
+                <p>mobileNumber: {displayCompanyObj.mobileNumber}<br/></p>
+                {/* <p>passwors: {displayCompanyObj.password} <br/></p> */}
+                <p>address: {displayCompanyObj.address}</p>
         </div>
  
         </div>

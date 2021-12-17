@@ -34,7 +34,7 @@ const GetAllCompany = () => {
 
     return (
         <div>
-            <h1 className="display-4 text-primary mt-3 mb-3" >Company Component</h1>
+            <h1 className="display-4 text-primary mt-3 mb-3" >All Company Details</h1>
             <div>
                 <div className="col-6 border border-light shadow p-3 mb-5 bg-white">
                     <p>List of all Company</p>

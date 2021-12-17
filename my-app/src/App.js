@@ -16,10 +16,10 @@ const App = () => {
          {/* <CompanyData/>   */}
         {/* <SpringCompanyData/> */}
         {/* <GetAllCompany/> */}
-        {/* <UpdateCompany/> */}
-        {/* <DeleteCompany/> */}
+        <UpdateCompany/>
+         {/* <DeleteCompany/>  */}
         {/* <GetCompanyById/> */}
-        <AddCompany/>
+        {/* <AddCompany/>  */}
 
     </ div>
   );
