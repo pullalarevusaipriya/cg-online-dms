@@ -1,6 +1,11 @@
 
+import AddCompany from "./Components/controller/AddCompany";
 import CompanyData from "./Components/controller/CompanyData";
-
+import DeleteCompany from "./Components/controller/DeleteCompany";
+import GetAllCompany from "./Components/controller/GetAllCompany";
+import GetCompanyById from "./Components/controller/GetCompanyById";
+// import { updateCompany } from "./redux/Compslice";
+import UpdateCompany from "./Components/controller/UpdateCompany";
 //import Routes from "./Routes";
 //import SpringCompanyData from "./Components/SpringCompanyData";
 
@@ -8,8 +13,14 @@ const App = () => {
   return (
     <div className="bg-light">
       {/* <Routes />   */}
-         <CompanyData/>  
+         {/* <CompanyData/>   */}
         {/* <SpringCompanyData/> */}
+        {/* <GetAllCompany/> */}
+        {/* <UpdateCompany/> */}
+        {/* <DeleteCompany/> */}
+        {/* <GetCompanyById/> */}
+        <AddCompany/>
+
     </ div>
   );
 }
