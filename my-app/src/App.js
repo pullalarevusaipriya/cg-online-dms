@@ -1,5 +1,8 @@
 
+//import BuysMilk from "./Components/companyBuysMilkcontroller/BuyMilk";
+//import AddCompany from "./Components/controller/AddCompany";
 import AddCompany from "./Components/controller/AddCompany";
+
 import CompanyData from "./Components/controller/CompanyData";
 import DeleteCompany from "./Components/controller/DeleteCompany";
 import GetAllCompany from "./Components/controller/GetAllCompany";
@@ -16,10 +19,11 @@ const App = () => {
          {/* <CompanyData/>   */}
         {/* <SpringCompanyData/> */}
         {/* <GetAllCompany/> */}
-        <UpdateCompany/>
+        {/* <UpdateCompany/> */}
          {/* <DeleteCompany/>  */}
         {/* <GetCompanyById/> */}
-        {/* <AddCompany/>  */}
+        <AddCompany/> 
+        {/* <BuysMilk/> */}
 
     </ div>
   );

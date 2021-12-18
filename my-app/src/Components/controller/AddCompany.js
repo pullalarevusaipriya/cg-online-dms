@@ -1,6 +1,6 @@
 import { useDispatch, useSelector  } from "react-redux";
 import { useState } from "react";
-import { getAllCompanyService,getCompanyByIdService,insertCompanyService} from "../services/CompService";
+//import { getAllCompanyService,getCompanyByIdService,insertCompanyService} from "../services/CompService";
 import axios from "axios";
 import Company from "../models/Company";
 
