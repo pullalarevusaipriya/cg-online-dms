@@ -13,7 +13,7 @@ import UpdateCompany from "./Components/controller/UpdateCompany";
 //import SpringCompanyData from "./Components/SpringCompanyData";
 
 const App = () => {
-  return (
+  return (     
     <div className="bg-light">
       {/* <Routes />   */}
          {/* <CompanyData/>   */}
